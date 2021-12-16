@@ -1,0 +1,4 @@
+.env
+blogs.txt
+sqlite.db*
+node_modules/

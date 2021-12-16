@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./sqlite.db"
+}
+
+model Blog {
+  id       String    @id @unique
+  title    String
+  articles Article[]
+}
+
+model Article {
+  id          String      @id @unique
+  blogId      String
+  blog        Blog     @relation(fields: [blogId], references: [id])
+  title       String
+  publishedAt DateTime
+  content     String
+}

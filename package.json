@@ -1,0 +1,26 @@
+{
+  "name": "niconico-ch-blomaga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "test": "jest",
+    "test:dev": "jest --watch"
+  },
+  "author": "Takumi Mori",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.4",
+    "playwright": "^1.17.1",
+    "ts-jest": "^27.1.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^3.6.0",
+    "dotenv": "^10.0.0",
+    "prisma": "^3.6.0"
+  }
+}
